@@ -229,12 +229,14 @@ span {
     cursor: pointer;
     position: absolute;
     top: 50%;
-    left: calc(50% - 100px);
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
 }
 
 .avatar__img {
-    width: 200px;
-    height: 350px;
+    height: 550px;
     border: 5px solid rgba(234, 15, 150, 0.9);
     box-shadow: inset 10px 10px 10px rgba(15, 219, 234, 0.9);
     -webkit-animation: balloon1 6s ease-in-out infinite;
@@ -614,3 +616,9 @@ h1 {
     80%, 99.9% {
       margin-top: 30%;
       margin-left: 80%; } }
+
+@media screen and (max-width: 600px) {
+        .avatar {
+            top: 24%;
+        }
+      }
